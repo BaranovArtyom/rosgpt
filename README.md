@@ -49,6 +49,7 @@ To get started with ROSGPT, follow these steps:
 2. Install the dependencies listed in the environment setup section.
    ```bash
    sudo apt install python3-colcon-common-extensions
+   sudo apt install libespeak-dev
    cd rosgpt && colcon build
    ```
 4. After following the environment setup steps, run the ROSGPT flask server using
