@@ -47,23 +47,29 @@ To get started with ROSGPT, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Install the dependencies listed in the environment setup section.
-3. After following the environment setup steps, run the ROSGPT flask server using
    ```bash
+   sudo apt install python3-colcon-common-extensions
+   cd rosgpt && colcon build
+   ```
+4. After following the environment setup steps, run the ROSGPT flask server using
+   ```bash
+   $ . /opt/ros/rolling/setup.bash
+   $ cd ~/dev/rosgpt/ && . install/setup.bash
    ros2 run rosgpt rosgpt
    ```
-4. Run the turtlesim node using
+5. Run the turtlesim node using
    ```bash
    ros2 run turtlesim turtlesim_node
    ```
-5. Run the rosgptparser_turtlesim.py using
+6. Run the rosgptparser_turtlesim.py using
    ```bash
    ros2 run rosgpt rosgptparser_turtlesim 
    ```
-6. Run the rosgpt_client_node.py using
+7. Run the rosgpt_client_node.py using
    ```bash
    ros2 run rosgpt rosgpt_client_node 
    ```
-7. Now you can start giving commands to the robot using the rosgpt_client_node terminal .for example you can say "ı want that you move forward 1 meter speed 1" and the robot will move forward 1 meter with speed 1.
+8. Now you can start giving commands to the robot using the rosgpt_client_node terminal .for example you can say "ı want that you move forward 1 meter speed 1" and the robot will move forward 1 meter with speed 1.
 
 ### Environment Setup
 
